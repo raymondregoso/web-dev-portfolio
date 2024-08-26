@@ -595,6 +595,7 @@ a {
     /* General adjustments */
     body {
         font-size: 12px; /* Smaller base font size */
+        overflow-x: hidden;
     }
     
     .container {

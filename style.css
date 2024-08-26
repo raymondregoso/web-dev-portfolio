@@ -715,7 +715,7 @@ a {
     }
 
     #contact .contact-item {
-        width: auto; 
+        width: 100%; 
         max-width: none; 
         margin: 10px 0;
 

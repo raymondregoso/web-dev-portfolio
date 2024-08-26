@@ -1,13 +1,19 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+﻿/*CSS Reset*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
-    font-size: 10px !important;
-    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -56,48 +62,49 @@ a {
     color: white;
     background-color: dodgerblue;
 }
-.brand h1{
+#header {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: white !important;
 }
-.brand h1 span{
+
+.brand h1 span {
     color: dodgerblue;
 }
 
-
-.nav-links{
-    flex: 1;
-    text-align: right;
-	
+.nav-links {
+    text-align: center;
 }
-.nav-links ul li{
+
+.navbar-nav .nav-item {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    
 }
-.nav-links ul li a {
-        color: aliceblue;
-        text-decoration: none;
-        font-size: 20px;
- }
-.nav-links ul li ::after {
-       content:'';
-       width: 0%;
-       height: 2px;
-       background: dodgerblue;
-       display: block;
-       margin: auto;
-       transition: 0.5s;
-    }
-    .nav-links ul li :hover::after {
-        width: 100%
-    }
 
-#header {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+.navbar-nav .nav-item a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: dodgerblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-item:hover::after {
+    width: 80%;
 }
 
 
@@ -583,6 +590,161 @@ a {
 
         /*Media Query for Tablet */
 
+/* Media Query for small screens (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    /* General adjustments */
+    body {
+        font-size: 12px; /* Smaller base font size */
+    }
+    
+    .container {
+        padding: 0 10px; /* Add padding to avoid content touching edges */
+    }
+
+    .section-title {
+        font-size: 3rem; /* Adjust font size for section titles */
+    }
+
+    .cta {
+        font-size: 1.4rem; /* Adjust font size for call-to-action buttons */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Hero Section */
+    #hero {
+        background-position: top center; /* Adjust background position */
+    }
+
+    #hero h1 {
+        font-size: 2rem !important; /* Adjust font size of hero headings */
+    }
+
+    /* Service Section */
+    #services .service-bottom .service-item {
+        flex-basis: 100%; /* Make each service item full-width */
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    #services .service-item, 
+    #services .service-item1, 
+    #services .service-item2, 
+    #services .service-item3 {
+        flex-basis: 100%; /* Ensure service items fit full width */
+        margin: 10px 0;
+
+    }
+
+    /* Project Section */
+    #projects .project-item {
+        flex-direction: column; 
+        width: 100%; 
+        margin: 10px 0;
+
+    }
+
+    #projects .project-item h1{
+        font-size: 2.5rem;
+        margin-left: 12rem;
+    }
+    #projects .project-item h2{
+        font-size: 2rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    #projects .project-item p{
+        font-size: 1rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
+
+    }
+
+    #projects .project-item .project-info a{
+        font-size: 1rem;
+        margin-left: 12rem;
+    }
+
+    #projects .project-img {
+        height: 100px; 
+    }
+
+    /* About Section */
+    #about .about {
+        flex-direction: column; 
+    }
+
+    #about .about-img {
+        display: none;
+       
+    }
+
+    #about .about-img img {
+        display: none;
+    }
+
+    #about .col-left .about-img {
+        display: none;
+    }
+
+    #about .col-left,
+    #about .col-right {
+        width: 100%; /* Make columns full-width */
+        padding: 0; /* Remove padding for better fit */
+        margin-top: -300px;
+
+    }
+
+    #about .col-right p {
+        font-size: 1rem; 
+    }
+
+    #tools {
+        margin-top: -300px;
+    }
+
+    /* Contact Section */
+    #contact .contact-items {
+        flex-direction: column; 
+    }
+
+     #contact .container .contact-top .contact-items{
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-right: -50px;
+    }
+
+    #contact .contact-item {
+        width: auto; 
+        max-width: none; 
+        margin: 10px 0;
+
+
+    }
+
+    /* Footer Section */
+    #footer .footer {
+        padding: 20px 10px; 
+    }
+
+    #footer h2 {
+        font-size: 1.4rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width:768px) {
     .cta {
         font-size: 2.5rem;
@@ -715,7 +877,6 @@ body {
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: 0.3s ease box-shadow;
 }
-
 /* Media Queries */
 @media (max-width: 992px) {
     #contact .contact-item {

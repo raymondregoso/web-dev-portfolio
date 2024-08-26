@@ -455,7 +455,7 @@ a {
 #about .col-left .about-img::after {
     content: '';
     position: absolute;
-    left: -33px;
+  
     top: 19px;
     height: 98%;
     width: 98%;
@@ -588,164 +588,9 @@ a {
         /* end keyframes */
 
 
-        /*Media Query for Tablet */
-
-/* Media Query for small screens (max-width: 480px) */
-@media only screen and (max-width: 480px) {
-    /* General adjustments */
-    body {
-        font-size: 12px; /* Smaller base font size */
-        overflow-x: hidden;
-    }
     
-    .container {
-        padding: 0 10px; /* Add padding to avoid content touching edges */
-    }
 
-    .section-title {
-        font-size: 3rem; /* Adjust font size for section titles */
-    }
-
-    .cta {
-        font-size: 1.4rem; /* Adjust font size for call-to-action buttons */
-        padding: 10px 20px; /* Adjust padding for smaller screens */
-    }
-
-    /* Hero Section */
-    #hero {
-        background-position: top center; /* Adjust background position */
-    }
-
-    #hero h1 {
-        font-size: 2rem !important; /* Adjust font size of hero headings */
-    }
-
-    /* Service Section */
-    #services .service-bottom .service-item {
-        flex-basis: 100%; /* Make each service item full-width */
-        margin: 10px 0; /* Adjust margins */
-    }
-
-    #services .service-item, 
-    #services .service-item1, 
-    #services .service-item2, 
-    #services .service-item3 {
-        flex-basis: 100%; /* Ensure service items fit full width */
-        margin: 10px 0;
-
-    }
-
-    /* Project Section */
-    #projects .project-item {
-        flex-direction: column; 
-        width: 100%; 
-        margin: 10px 0;
-
-    }
-
-    #projects .project-item h1{
-        font-size: 2.5rem;
-        margin-left: 12rem;
-    }
-    #projects .project-item h2{
-        font-size: 2rem;
-        margin-left: 12rem;
-        margin-right: 12rem;
-    }
-    #projects .project-item p{
-        font-size: 1rem;
-        margin-left: 12rem;
-        margin-right: 12rem;
-
-    }
-
-    #projects .project-item .project-info a{
-        font-size: 1rem;
-        margin-left: 12rem;
-    }
-
-    #projects .project-img {
-        height: 100px; 
-    }
-
-    /* About Section */
-    #about .about {
-        flex-direction: column; 
-    }
-
-    #about .about-img {
-        display: none;
-       
-    }
-
-    #about .about-img img {
-        display: none;
-    }
-
-    #about .col-left .about-img {
-        display: none;
-    }
-
-    #about .col-left,
-    #about .col-right {
-        width: 100%; /* Make columns full-width */
-        padding: 0; /* Remove padding for better fit */
-        margin-top: -300px;
-
-    }
-
-    #about .col-right p {
-        font-size: 1rem; 
-    }
-
-    #tools {
-        margin-top: -300px;
-    }
-
-    /* Contact Section */
-    #contact .contact-items {
-        flex-direction: column; 
-    }
-
-     #contact .container .contact-top .contact-items{
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        margin-right: -50px;
-    }
-
-    #contact .contact-item {
-        width: 100%; 
-        max-width: none; 
-        margin: 10px 0;
-
-
-    }
-
-    /* Footer Section */
-    #footer .footer {
-        padding: 20px 10px; 
-    }
-
-    #footer h2 {
-        font-size: 1.4rem; 
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Media Query for medium screens (max-width: 768px) */
 @media only screen and (min-width:768px) {
     .cta {
         font-size: 2.5rem;
@@ -896,3 +741,143 @@ body {
     }
 }
 
+
+
+/* Media Query for small screens (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    /* General adjustments */
+    body {
+        font-size: 12px; 
+        overflow-x: hidden; 
+    }
+    
+    .container {
+        padding: 0 10px; 
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .cta {
+        font-size: 1.4rem; 
+        padding: 10px 20px; 
+    }
+
+    /* Hero Section */
+    #hero {
+        background-position: top center; 
+    }
+
+    #hero h1 {
+        font-size: 2rem !important; 
+    }
+
+    /* Service Section */
+    #services .service-bottom .service-item {
+        flex-basis: 100%; 
+        margin: 10px 0; 
+        padding: 0 10px; 
+    }
+
+    #services .service-item, 
+    #services .service-item1, 
+    #services .service-item2, 
+    #services .service-item3 {
+        flex-basis: 100%; /* Ensure service items fit full width */
+        margin: 10px 0;
+        padding: 0 10px; /* Add padding inside service items */
+    }
+
+    /* Project Section */
+    #projects .project-item {
+        flex-direction: column; 
+        width: 100%; 
+        margin: 10px 0;
+        padding: 0 10px; /* Add padding inside project items */
+    }
+
+    #projects .project-item h1 {
+        font-size: 2.5rem;
+        margin-left: 0; /* Remove left margin */
+    }
+
+    #projects .project-item h2 {
+        font-size: 2rem;
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    #projects .project-item p {
+        font-size: 1rem;
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    #projects .project-item .project-info a {
+        font-size: 1rem;
+        margin-left: 0; /* Remove left margin */
+    }
+
+    #projects .project-img {
+        height: 100px; 
+    }
+
+    /* About Section */
+    #about .about {
+        flex-direction: column; 
+        padding: 0 10px; /* Add padding inside about section */
+    }
+
+    #about .about-img {
+        display: none;
+    }
+
+    #about .about-img img {
+        display: none;
+    }
+
+    #about .col-left,
+    #about .col-right {
+        width: 100%; 
+        padding: 0; 
+        margin-top: 0; 
+    }
+
+    #about .col-right p {
+        font-size: 1rem; 
+    }
+
+    #tools {
+        margin-top: 0; 
+    }
+
+    /* Contact Section */
+    #contact .contact-items {
+        flex-direction: column; 
+    }
+
+    #contact .container .contact-top .contact-items {
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    #contact .contact-item {
+        width: auto; 
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+    /* Footer Section */
+    #footer .footer {
+        padding: 20px 10px; 
+    }
+
+    #footer h2 {
+        font-size: 1.4rem; 
+    }
+}

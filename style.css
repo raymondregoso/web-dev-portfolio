@@ -780,7 +780,7 @@ body {
         margin: 10px 0; 
         padding: 0 10px; 
         margin-top: -150px;
-        
+
     }
 
     #services .service-item, 
@@ -804,7 +804,7 @@ body {
     #services .service-item1 p, 
     #services .service-item2 p, 
     #services .service-item3 p{
-        font-size: 1rem !important; 
+        font-size: 1rem; 
     }
 
     /* Project Section */
@@ -842,13 +842,12 @@ body {
     #projects .project-item .project-info a {
         font-size: 0.8rem;
         
-
-
-
     }
 
     #projects .project-img {
         height: 100px; 
+        width: 100%;
+
     }
 
     /* About Section */

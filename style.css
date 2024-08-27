@@ -779,6 +779,8 @@ body {
         flex-basis: 100%; 
         margin: 10px 0; 
         padding: 0 10px; 
+        margin-top: -150px;
+        
     }
 
     #services .service-item, 
@@ -788,6 +790,8 @@ body {
         flex-basis: 100%; 
         margin: 10px 0;
         padding: 0 10px; 
+        max-width: 90%;
+
     }
 
     #services .service-item h1, 
@@ -851,6 +855,7 @@ body {
     #about .about {
         flex-direction: column; 
         padding: 0 10px; 
+        margin-top: -350px;
     }
 
     #about .about-img {
@@ -887,7 +892,7 @@ body {
         align-content: center;
         justify-content: center;
         margin-right: 0;
-        margin-left: 3px;
+        margin-left: 2.5px;
     }
 
     #contact .contact-item {

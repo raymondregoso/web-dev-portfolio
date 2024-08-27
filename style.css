@@ -887,10 +887,11 @@ body {
         align-content: center;
         justify-content: center;
         margin-right: 0;
+        margin-left: 3px;
     }
 
     #contact .contact-item {
-        width: auto; 
+        width: 100%; 
         max-width: 100%;
         margin: 10px 0;
         padding: 0;

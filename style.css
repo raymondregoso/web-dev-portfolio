@@ -742,13 +742,16 @@ body {
 
 
 /* Media Query for small screens (max-width: 480px) */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
     /* General adjustments */
     body {
         font-size: 12px; 
         overflow-x: hidden; 
     }
     
+    .navbar-brand h1 {
+        font-size: 2rem;
+    }
     .container {
         padding: 0 10px; 
     }
@@ -785,6 +788,19 @@ body {
         flex-basis: 100%; 
         margin: 10px 0;
         padding: 0 10px; 
+    }
+
+    #services .service-item h1, 
+    #services .service-item1 h1, 
+    #services .service-item2 h1, 
+    #services .service-item3 h1{
+        font-size: 1.5rem; 
+    }
+    #services .service-item p, 
+    #services .service-item1 p, 
+    #services .service-item2 p, 
+    #services .service-item3 p{
+        font-size: 1rem !important; 
     }
 
     /* Project Section */

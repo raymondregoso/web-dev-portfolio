@@ -455,7 +455,7 @@ a {
 #about .col-left .about-img::after {
     content: '';
     position: absolute;
-  
+    left: -33px;
     top: 19px;
     height: 98%;
     width: 98%;
@@ -690,10 +690,8 @@ a {
 }
 body {
     overflow-x: hidden;
-}
-
     max-width: 100%; 
-    overflow-x: hidden; 
+    
 }
 
 
@@ -744,7 +742,7 @@ body {
 
 
 /* Media Query for small screens (max-width: 480px) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 320px) {
     /* General adjustments */
     body {
         font-size: 12px; 
@@ -784,39 +782,49 @@ body {
     #services .service-item1, 
     #services .service-item2, 
     #services .service-item3 {
-        flex-basis: 100%; /* Ensure service items fit full width */
+        flex-basis: 100%; 
         margin: 10px 0;
-        padding: 0 10px; /* Add padding inside service items */
+        padding: 0 10px; 
     }
 
     /* Project Section */
+#projects .all-projects {
+
+    max-width: 100%;
+}
+
     #projects .project-item {
         flex-direction: column; 
-        width: 100%; 
+        width: 90%; 
         margin: 10px 0;
-        padding: 0 10px; /* Add padding inside project items */
+        padding: 0 10px; 
+        
     }
 
     #projects .project-item h1 {
-        font-size: 2.5rem;
-        margin-left: 0; /* Remove left margin */
+        font-size: 2rem;
+        margin-left: 30px; 
     }
 
     #projects .project-item h2 {
-        font-size: 2rem;
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
+        font-size: 1.5rem;
+        margin-left: 30px; 
+        margin-right: 0; 
     }
 
     #projects .project-item p {
         font-size: 1rem;
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
+        margin-left: 30px;
+        padding-right: 20px; 
+      
     }
 
     #projects .project-item .project-info a {
-        font-size: 1rem;
-        margin-left: 0; /* Remove left margin */
+        font-size: 0.8rem;
+        
+
+
+
     }
 
     #projects .project-img {
@@ -826,7 +834,7 @@ body {
     /* About Section */
     #about .about {
         flex-direction: column; 
-        padding: 0 10px; /* Add padding inside about section */
+        padding: 0 10px; 
     }
 
     #about .about-img {
@@ -869,7 +877,7 @@ body {
         width: auto; 
         max-width: 100%;
         margin: 10px 0;
-        padding: 0 10px;
+        padding: 0;
     }
 
     /* Footer Section */
